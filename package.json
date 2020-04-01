@@ -1,0 +1,31 @@
+{
+  "name": "vsonline-meets-heroku",
+  "version": "1.0.0",
+  "description": "## Create a new repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mp198609/vsonline-meets-heroku.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mp198609/vsonline-meets-heroku/issues"
+  },
+  "homepage": "https://github.com/mp198609/vsonline-meets-heroku#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node app",
+    "build": "webpack",
+    "heroku-postbuild": "node heroku-special-command && webpack"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
+  }
+}

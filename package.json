@@ -4,7 +4,9 @@
   "description": "## Create a new repository",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app",
+    "build": "webpack",
+    "heroku-postbuild": "node heroku-special-command && webpack"
   },
   "repository": {
     "type": "git",
@@ -18,11 +20,6 @@
   "homepage": "https://github.com/mp198609/vsonline-meets-heroku#readme",
   "dependencies": {
     "express": "^4.17.1"
-  },
-  "scripts": {
-    "start": "node app",
-    "build": "webpack",
-    "heroku-postbuild": "node heroku-special-command && webpack"
   },
   "engines": {
     "node": "12.x",
